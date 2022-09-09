@@ -99,7 +99,7 @@
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>VEDITA</td>
+                                    <td>GOKU</td>
                                     <td>SAIJYN</td>
                                     <td>000.000.000-00</td>
                                     <td>
@@ -122,6 +122,12 @@
     </div>
 
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/request.js"></script>
+    <script src="js/cliente.js"></script>
+
+    
+
+
 </body>
 
 </html>

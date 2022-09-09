@@ -7,21 +7,6 @@ async function lista_cliente() {
         cache:'default'
 
     }
-//A variavel "reponse" recebera uma promisse
-//De uma tentativa de requisição
-const respose = await send('listacliente.php', opt);
-const html = await respose.text;
-console.log(html);
-
-}
-//Mapeando o evento de  carregamento do documento
-
-document.addEventListener("DOMContentLoaded", function() {
-    lista_cliente();
-
-
-
-});
     //tentamos executar uma requisição 
     fetch('listacliente.php', opt)
 
@@ -37,4 +22,12 @@ console.log(e.message());
 })
 
 
+}
+//Mapeando o evento de  carregamento do documento
 
+document.addEventListener("DOMContentLoaded", function() {
+    lista_cliente();
+
+
+
+});
