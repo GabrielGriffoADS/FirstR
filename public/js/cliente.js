@@ -1,6 +1,11 @@
 const atualiza = document.querySelector("#btnatualiza");
 const salvar = document.querySelector("#btnsalvar");
 
+const alerta = document.querySelector("#alerta");
+const titulo = document.querySelector("#titulo");
+const carregando = document.querySelector("#carregando");
+
+
 //CONFIGURAÇÕES DOS PARAMENTRO DE VALIDAÇÃO DO FORMULÁRIO
 $('#frmcliente').validate({
     rules: {
@@ -67,7 +72,10 @@ salvar.addEventListener('click', function () {
     const valida = $('#frmcliente').valid();
     // let acao = document.getElementById("edtacao");
     if (valida == true) {
-        inserir();
+        alerta.className = 'alert alert-primary';
+        titulo.className = 'd-none';
+        carregando.className = 'mb-0';
+        //inserir();
     }
 });
 
